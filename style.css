@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+  font-family: "Arial";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(19, auto);
+  margin-top: 15px;
+  padding-right: 2%;
+  grid-gap: 4px;
+  grid-template-rows: 8;
+  font-size: 1rem;
+}
+
+.row-first {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.col-first {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.atomic-number {
+  text-align: left;
+  margin: 0;
+  color: white;
+  padding-top: 3%;
+  padding-left: 5%;
+  font-size: 0.8rem;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
+
+.element1,
+.element3,
+.element11,
+.element19,
+.element37,
+.element55,
+.element87,
+.atomic-number1 {
+  grid-column-start: 2;
+  padding-left: 10%;
+}
+
+.element2 {
+  grid-column-start: 19;
+}
+
+.element5,
+.element13 {
+  grid-column-start: 14;
+}
+
+.element72,
+.element104 {
+  grid-column-start: 5;
+}
+
+.green {
+  background-color: #085808;
+}
+.pink {
+  background-color: #940d67;
+}
+.blue {
+  background-color: #062c52;
+}
+.red {
+  background-color: #6b0101;
+}
+.orange {
+  background-color: #975008f1;
+}
+.purple {
+  background-color: #3d0839;
+}
+.lightblue {
+  background-color: #2176a0;
+}
+.lightgreen {
+  background-color: #459c0b;
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    padding-right: 20px;
+  }
+
+  .atomic-number {
+    font-size: 0.6rem;
+  }
+  .name {
+    font-size: 0.6rem;
+  }
+}
